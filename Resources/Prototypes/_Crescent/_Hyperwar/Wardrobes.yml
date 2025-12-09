@@ -22,7 +22,7 @@
     WeaponRifleHoundMarksman: 60
     WeaponLightMachineGunNCSPRPD: 60
     WeaponLightMachineGunL6: 60
-    WeaponSubMachineGunAtreides: 60
+    WeaponSubMachineGunAtreide: 60
     WeaponSubMachineGunCheshyre: 60
     WeaponSubMachineGunMP5: 60
     WeaponSubMachineGunSabre: 60
@@ -908,7 +908,7 @@
   startingInventory:
     WeaponSniperNCWLNovomosin: 100
     BoxSpeedLoaderRifle: 100
-    WeaponSubMachineGunNCWLPartisan: 4
+    WeaponSubMachineGunNCWLPartisann: 4
     MagazinePistolSubMachineGun: 12
     WeaponAntimaterielNCWLHayha: 1
     BoxRoundsAntiMateriel: 1

@@ -27,7 +27,7 @@
   tier: 1
   cost: 6000
   recipeUnlocks:
-  - WeaponSubMachineGunAtreidesCyberdawn
+  - WeaponSubMachineGunAtreideCyberdawn
   - WeaponRifleAkCyberdawn
   - WeaponRifleKrinkovCyberdawn
   - WeaponPistolViperWoodCyberdawn
