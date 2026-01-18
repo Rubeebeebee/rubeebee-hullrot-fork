@@ -25,7 +25,7 @@
 - type: startingGear
   id: SyndicateLoneOperativeGearFull
   subGear:
-   - SyndicatePlasmamanGear
+  - SyndicatePlasmamanGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitOperative
     back: ClothingBackpackDuffelSyndicateOperative
