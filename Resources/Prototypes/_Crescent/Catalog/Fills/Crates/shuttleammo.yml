@@ -276,17 +276,6 @@
 #Shipgun Rework Ammo Below
 
 - type: entity
-  id: Crate Ammo
-  parent: N14CrateAluminium
-  name: crate
-  description: 
-  components:
-  - type: StorageFill
-    contents:
-      - id: 
-        amount: 
-
-- type: entity
   id: Crate20mmAmmo
   parent: N14CrateAluminium
   name: 20mm FMJ 'Screamer' carbine magazine crate
