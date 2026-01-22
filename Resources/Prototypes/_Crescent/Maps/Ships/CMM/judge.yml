@@ -1,14 +1,14 @@
- x# Author Info
+# Author Info
 # Discord: szyefan
 
 - type: vessel
   id: Judge
   name: TS Judge
   description: |
-    Minutemen destroyer. Its main purpose is brawling.
-    LOADOUT: 1x 300cc 'Bolter' plasma blaster, 6x 50mm 'Whistler' gatlings
-    MINIMUM CREW: 1x Pilot, 1x Gunner, 1x Loader
-  price: 100000
+    Minutemen destroyer. Designed to brawl.
+    LOADOUT: 1x 300cc 'Bolter' plasma blaster
+    MINIMUM CREW: 1x Pilot
+  price: 15000
   category: Small
   group: None
   path: /Maps/_Crescent/Shuttles/CMM/judge.yml
@@ -33,5 +33,3 @@
             prefixCreator: '14'
         - type: VesselDesignation
           designation: vessel-designation-destroyer
-        - type: VesselDescription
-          description: A ship designed to brawl in the middle of the battlefield.
