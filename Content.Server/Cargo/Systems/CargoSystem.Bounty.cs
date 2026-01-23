@@ -443,7 +443,21 @@ public sealed partial class CargoSystem
         {
             if (component.Bounties[i].Id == data.Id)
             {
-                component.Bounties.RemoveAt(i);
+                string? actorName = null;
+                if (actor != null)
+                {
+                    var getIdentityEvent = new TryGetIdentityShortInfoEvent(ent.Owner, actor.Value);
+                    RaiseLocalEvent(getIdentityEvent);
+                    actorName = getIdentityEvent.Title;
+                }
+
+                ent.Comp.History.Add(new CargoBountyHistoryData(data,
+                    skipped
+                        ? CargoBountyHistoryData.BountyResult.Skipped
+                        : CargoBountyHistoryData.BountyResult.Completed,
+                    _timing.CurTime,
+                    actorName));
+                ent.Comp.Bounties.RemoveAt(i);
                 return true;
             }
         }
