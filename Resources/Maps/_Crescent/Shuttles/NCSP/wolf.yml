@@ -79,7 +79,7 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
     - type: Shuttle
-      baseMaxLinearVelocity: 25
+      baseMaxLinearVelocity: 20
     - type: GridPathfinding
     - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier
@@ -8662,7 +8662,7 @@ entities:
     - type: Transform
       pos: 0.5,0.5
       parent: 1
-- proto: WeaponSubMachineGunNCSPAtreides
+- proto: WeaponSubMachineGunAtreides
   entities:
   - uid: 1062
     components:
