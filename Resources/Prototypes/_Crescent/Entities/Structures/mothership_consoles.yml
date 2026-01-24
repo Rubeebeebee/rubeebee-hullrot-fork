@@ -181,10 +181,12 @@
   components:
   - type: ShipyardListing
     shuttles:
-    - Provost
+    - Respondant
     - Adjudicator
-    - Warden
-    - Jury
+    - Sentry
+    - Minuteman #instead of guard for now
+    - Sentinel
+    #- Guard --uncomment when we get an UL
 
 - type: entity
   id: RefugeMothershipComputer
