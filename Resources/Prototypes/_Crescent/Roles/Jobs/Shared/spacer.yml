@@ -12,7 +12,7 @@
       inverted: true
       factionID: "SRM"
     - !type:CharacterOverallTimeRequirement
-      min: 0
+      min: 1080
     - !type:CharacterSpeciesRequirement
       inverted: true
       species:
