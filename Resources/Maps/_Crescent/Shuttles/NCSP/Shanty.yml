@@ -1050,7 +1050,6 @@ entities:
     - type: BecomesStation
       id: Shanty
     - type: SelfDeleteGrid
-    - type: VesselIcon
 - proto: AAAHardpointFixed
   entities:
   - uid: 2
