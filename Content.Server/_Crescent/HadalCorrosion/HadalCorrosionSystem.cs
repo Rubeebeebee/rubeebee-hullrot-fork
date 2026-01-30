@@ -2,32 +2,17 @@ using Content.Shared._Crescent.Overlays;
 using Content.Shared._Crescent.SpaceBiomes;
 using Robust.Shared.GameStates;
 using Robust.Shared.Network;
+using Content.Server.Polymorph;
+using Content.Shared._Crescent.HadalCorrosion;
+using Content.Server.Polymorph.Systems;
 
-namespace Content.Shared._Crescent.HadalCorrosion;
-
-/// <summary>
-///     get the FUCK out of the hadal like what are you doing
-/// </summary>
-[RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
-public sealed partial class HadalCorrosionComponent : Component
-{
-    [DataField, AutoNetworkedField]
-    public float CorrosionLevel = 0.001f;
-}
-
-/// <summary>
-///     okay maybe you can have a little fog. as a treat
-/// </summary>
-[RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
-public sealed partial class CorrosionResistanceComponent : Component
-{
-    [DataField, AutoNetworkedField]
-    public float ResistanceMultiplier = 0.5f;
-}
+namespace Content.Server._Crescent.HadalCorrosion;
 
 public sealed class HadalCorrosionSystem : EntitySystem
 {
     [Dependency] private readonly INetManager _net = default!;
+    [Dependency] private readonly PolymorphSystem _polymorph = default!;
+
     public override void Initialize()
     {
         base.Initialize();
@@ -52,10 +37,16 @@ public sealed class HadalCorrosionSystem : EntitySystem
             if (!inHadal)
                 corrosionAmount = corrosionAmount * -5;
 
+            if (EntityManager.TryGetComponent<MetaDataComponent>(ent, out var meta) && meta.EntityPrototype?.ID == "MobFleshGolemCorroded")
+                corrosionAmount = corrosionAmount * -10f;
+
             hadalCorrosion.CorrosionLevel = Math.Min(1f, Math.Max(0f, corrosionAmount));
 
             var staticomp = EnsureComp<StaticOverlayComponent>(ent);
             staticomp.AdditionLevel = hadalCorrosion.CorrosionLevel;
+
+            if (hadalCorrosion.CorrosionLevel >= 1f)
+                _polymorph.PolymorphEntity(ent, "HadalCorrosion");
 
             Dirty(ent, hadalCorrosion);
             Dirty(ent, staticomp);
