@@ -61,7 +61,6 @@
     - Gnosis
     - Praxis
     - Sunesis
-    - Imparator
     - Laelaps
     - Dragoon
     - Suzerain
@@ -73,7 +72,6 @@
   components:
   - type: ShipyardListing
     shuttles:
-    - Janissary
     - Redemptor
     - Imparator
     - Perigale
