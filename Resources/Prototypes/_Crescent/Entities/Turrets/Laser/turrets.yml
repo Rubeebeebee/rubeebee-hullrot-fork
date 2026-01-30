@@ -163,7 +163,7 @@
         params:
           variation: 0.12
     - type: RechargeBasicEntityAmmo
-      rechargeCooldown: 0.8
+      rechargeCooldown: 0.2
       rechargeSound:
         path: /Audio/Weapons/Guns/Bolt/lmg_bolt_closed.ogg
         params:
@@ -171,8 +171,8 @@
           variation: 0.08
     - type: BasicEntityAmmoProvider
       proto: BulletRetribution
-      capacity: 300
-      count: 300
+      capacity: 500
+      count: 500
     - type: ApcPowerReceiver
       powerLoad: 5000
     - type: HardpointAnchorableOnly

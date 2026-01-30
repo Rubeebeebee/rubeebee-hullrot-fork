@@ -54,7 +54,7 @@ public sealed class HadalCorrosionSystem : EntitySystem
             var staticomp = EnsureComp<StaticOverlayComponent>(ent);
             staticomp.AdditionLevel = hadalCorrosion.CorrosionLevel;
 
-            if (hadalCorrosion.CorrosionLevel >= 1f)
+            if (hadalCorrosion.CorrosionLevel >= 1f && corrosionAmount > 0f)
                 _polymorph.PolymorphEntity(ent, "HadalCorrosion");
 
             Dirty(ent, hadalCorrosion);
