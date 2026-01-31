@@ -11,7 +11,7 @@
   result: TradeGoodMiltech
   completetime: 2
   materials:
-    Steel: 5000
+    Steel: 37500
     Gold: 1500
     Silver: 1000
 
@@ -20,7 +20,7 @@
   result: TradeGoodAlloys
   completetime: 2
   materials:
-    Steel: 5000
+    Steel: 45000
     Plasma: 2500
 
 - type: latheRecipe
@@ -28,7 +28,7 @@
   result: TradeGoodPlasma
   completetime: 2
   materials:
-    Steel: 2500
+    Steel: 7500
     Plasma: 5000
 
 - type: latheRecipe
@@ -36,7 +36,7 @@
   result: TradeGoodWine
   completetime: 2
   materials:
-    Biomass: 250
+    Biomass: 1500
     Glass: 2500
 
 - type: latheRecipe
@@ -89,7 +89,7 @@
   result: TradeGoodAlcohol
   completetime: 2
   materials:
-    Biomass: 2500
+    Biomass: 1500
     Glass: 2500
 
 - type: latheRecipe
@@ -97,14 +97,14 @@
   result: TradeGoodAntibiotics
   completetime: 2
   materials:
-    Biomass: 50
+    Biomass: 150
 
 - type: latheRecipe
   id: CyberneticCrate
   result: TradeGoodCybernetics
   completetime: 2
   materials:
-    Steel: 2500
+    Steel: 7500
     Glass: 2500
 
 - type: latheRecipe
@@ -119,42 +119,42 @@
   result: TradeGoodGunparts
   completetime: 2
   materials:
-    Steel: 5000
+    Steel: 15000
 
 - type: latheRecipe
   id: Ammocrate
   result: TradeGoodAmmo
   completetime: 2
   materials:
-    Steel: 5000
+    Steel: 15000
 
 - type: latheRecipe
   id: Scopcrate
   result: TradeGoodScop
   completetime: 2
   materials:
-    Biomass: 50
+    Biomass: 150
 
 - type: latheRecipe
   id: UnionWeaponCrate
   result: TradeGoodUnionWeapon
   completetime: 2
   materials:
-    Steel: 5000
+    Steel: 15000
 
 - type: latheRecipe
   id: UnionArmorCrate
   result: TradeGoodUnionArmor
   completetime: 2
   materials:
-    Steel: 1000
+    Steel: 15000
 
 - type: latheRecipe
   id: UnionVodka
   result: TradeGoodUnionVodka
   completetime: 2
   materials:
-    Biomass: 250
+    Biomass: 1500
     Glass: 2500
 
 - type: latheRecipe
@@ -162,7 +162,7 @@
   result: TradeGoodUnionBallistic
   completetime: 2
   materials:
-    Steel: 5000
+    Steel: 15000
     Uranium: 2500
 
 - type: latheRecipe
