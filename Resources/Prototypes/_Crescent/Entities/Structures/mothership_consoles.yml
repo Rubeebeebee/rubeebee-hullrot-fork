@@ -153,6 +153,7 @@
   components:
   - type: ShipyardListing
     shuttles:
+    -HornetDrone
     #- Khopesh
     #- Broadsword
 
