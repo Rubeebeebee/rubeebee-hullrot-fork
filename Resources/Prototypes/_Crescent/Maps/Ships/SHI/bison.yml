@@ -21,7 +21,7 @@
             sprite: _Crescent/ShipIcons/ifficons.rsi
             state: corvette
         - type: StationNameSetup
-          mapNameTemplate: 'CSEC Bison {1}'
+          mapNameTemplate: 'SHI Bison {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
             prefixCreator: '14'

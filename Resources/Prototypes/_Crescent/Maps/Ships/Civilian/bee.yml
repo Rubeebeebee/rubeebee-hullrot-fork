@@ -3,7 +3,7 @@
 
 - type: vessel
   id: Bee
-  name: TS Bee
+  name: Bee
   description: |
     A variant of the Wasp, the Bee carries a 180mm Idna Launcher with two torpedoes pre-loaded, requiring frequent reloading for continuous use. It is wise to consider hit-and-run tactics with this fighter.
     LOADOUT: 1x 30mm miniswamer rocket pod
