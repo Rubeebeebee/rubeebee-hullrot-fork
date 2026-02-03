@@ -4,6 +4,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ShipWeaponProjectile
   - type: Projectile
     ignoreWeaponGrid: true
@@ -34,6 +35,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ShipWeaponProjectile
   - type: Projectile
     ignoreWeaponGrid: true
@@ -60,6 +62,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ShipWeaponProjectile
   - type: Projectile
     ignoreWeaponGrid: true
@@ -86,6 +89,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ShipWeaponProjectile
   - type: Projectile
     ignoreWeaponGrid: true

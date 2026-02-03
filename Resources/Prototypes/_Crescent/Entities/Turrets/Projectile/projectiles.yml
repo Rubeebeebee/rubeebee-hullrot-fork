@@ -98,6 +98,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ProjectileIFF
     visualType: Circle
     color: White
@@ -107,7 +108,6 @@
       types:
         Structural: 45
         Piercing: 85
-  - type: ProjectilePhasePrevent
   - type: PointLight
     radius: 3.5
     color: orange
@@ -127,6 +127,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ProjectileIFF
     visualType: Circle
     color: White
@@ -136,7 +137,6 @@
       types:
         Structural: 35
         Piercing: 75
-  - type: ProjectilePhasePrevent
   - type: PointLight
     radius: 3.5
     color: orange
@@ -156,10 +156,10 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ProjectileIFF
     visualType: Circle
     color: White
-  - type: ProjectilePhasePrevent
   - type: Projectile
     ignoreWeaponGrid: true
     damage:
@@ -193,6 +193,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ProjectileIFF
     visualType: Square
     color: White
@@ -220,6 +221,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ProjectileIFF
     visualType: Square
     color: White
@@ -247,6 +249,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ProjectileIFF
     visualType: Square
     color: White
@@ -356,6 +359,7 @@
   - type: ProjectileIFF
     visualType: Square
     color: White
+  - type: ProjectilePhasePrevent
   - type: ShipWeaponProjectile
   - type: Projectile
     ignoreWeaponGrid: true
@@ -389,6 +393,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ProjectileIFF
     visualType: Diamond
     color: White
@@ -423,6 +428,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ProjectileIFF
     visualType: Diamond
     color: White
@@ -457,6 +463,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ProjectileIFF
     visualType: Diamond
     color: White
@@ -490,6 +497,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: Projectile
     ignoreWeaponGrid: true
     damage:
@@ -524,6 +532,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ShipWeaponProjectile
   - type: Projectile
     ignoreWeaponGrid: true

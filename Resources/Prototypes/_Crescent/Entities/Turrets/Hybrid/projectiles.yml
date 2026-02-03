@@ -5,6 +5,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent # still do not remove
   - type: ProjectileIFF
     visualType: Circle
     color: "#ea86f7" #you have no idea how hard it was to see the previous IFF color
@@ -25,7 +26,6 @@
     layers:
       - state: infernoshot
   - type: ShipWeaponProjectile
-  - type: ProjectilePhasePrevent #do not remove
     mask:
     - BulletImpassable
     - Impassable
@@ -36,6 +36,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ProjectileIFF
     visualType: Circle
     color: "#ea86f7"
@@ -70,6 +71,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ProjectileIFF
     visualType: Circle
     color: "#ea86f7"
