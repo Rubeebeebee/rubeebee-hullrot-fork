@@ -177,7 +177,7 @@
     rotationSpeed: 25
     acceleration: 50
     topSpeed: 150
-    fieldOfView: 60
+    fieldOfView: 50
     defaultSeekingRange: 800
     guidanceAlgorithm: PurePursuit
   - type: Fixtures
@@ -236,7 +236,7 @@
     rotationSpeed: 35
     acceleration: 100
     topSpeed: 150
-    fieldOfView: 50
+    fieldOfView: 45
     defaultSeekingRange: 700
     guidanceAlgorithm: PurePursuit
 
@@ -270,7 +270,7 @@
     rotationSpeed: 35
     acceleration: 70
     topSpeed: 175
-    fieldOfView: 75
+    fieldOfView: 60
     defaultSeekingRange: 1000
     guidanceAlgorithm: PurePursuit
 
@@ -304,7 +304,7 @@
     rotationSpeed: 30
     acceleration: 60
     topSpeed: 150
-    fieldOfView: 50
+    fieldOfView: 45
     defaultSeekingRange: 850
     guidanceAlgorithm: PurePursuit
 
@@ -349,7 +349,7 @@
     rotationSpeed: 35
     acceleration: 45
     topSpeed: 100
-    fieldOfView: 75
+    fieldOfView: 60
     defaultSeekingRange: 1500
     guidanceAlgorithm: PurePursuit
   - type: Fixtures
@@ -417,7 +417,7 @@
     rotationSpeed: 35
     acceleration: 45
     topSpeed: 100
-    fieldOfView: 75
+    fieldOfView: 65
     defaultSeekingRange: 1500
     guidanceAlgorithm: PurePursuit
   - type: Fixtures
@@ -555,7 +555,7 @@
     rotationSpeed: 10
     acceleration: 25
     topSpeed: 80
-    fieldOfView: 75
+    fieldOfView: 65
     defaultSeekingRange: 1500
     guidanceAlgorithm: PurePursuit
   - type: Fixtures
@@ -624,7 +624,7 @@
     rotationSpeed: 12
     acceleration: 35
     topSpeed: 85
-    fieldOfView: 75
+    fieldOfView: 70
     defaultSeekingRange: 3000
     guidanceAlgorithm: PredictiveGuidance
   - type: Fixtures
@@ -695,7 +695,7 @@
     rotationSpeed: 8
     acceleration: 10
     topSpeed: 90
-    fieldOfView: 50
+    fieldOfView: 40
     defaultSeekingRange: 5000
     guidanceAlgorithm: PredictiveGuidance
   - type: Fixtures
