@@ -232,15 +232,6 @@
     AdvancedElectronics: 500
 
 - type: latheRecipe
-  id: WeaponShotgunEnforcer
-  result: WeaponShotgunEnforcer
-  completetime: 2
-  materials:
-    Steel: 2500
-    Plastic: 1000
-    BallisticCycler: 500
-
-- type: latheRecipe
   id: WeaponShotgunSHIDoubleBarreled4g
   result: WeaponShotgunSHIDoubleBarreled4g
   completetime: 2
