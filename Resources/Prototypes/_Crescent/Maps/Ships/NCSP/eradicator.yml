@@ -3,7 +3,7 @@
 #
 - type: vessel
   id: Eradicator
-  name: NCSP Eradicator
+  name: GSC Eradicator
   description: A Syndicate stealth destroyer.
   price: 115000 #115000 appraisegrid
   category: Medium
@@ -12,7 +12,7 @@
 
 - type: gameMap
   id: Eradicator
-  mapName: 'NCSP Eradicator'
+  mapName: 'GSC Eradicator'
   mapPath: /Maps/_Crescent/Shuttles/NCSP/eradicator.yml
   minPlayers: 0
   stations:

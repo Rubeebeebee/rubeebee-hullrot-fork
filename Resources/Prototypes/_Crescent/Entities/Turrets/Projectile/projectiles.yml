@@ -20,7 +20,7 @@
     color: orange
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 12 #960m
+    lifetime: 10 #1500m
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/pdtcasing.rsi
     layers:
@@ -42,14 +42,14 @@
     ignoreWeaponGrid: true
     damage:
       types:
-        Structural: 20
+        Structural: 10
         Piercing: 50
   - type: PointLight
     radius: 3.5
     color: orange
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 15 #1200m
+    lifetime: 12 #1800m
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/pdtcasing.rsi
     layers:
@@ -71,7 +71,7 @@
     ignoreWeaponGrid: true
     damage:
       types:
-        Structural: 20
+        Structural: 5
         Piercing: 20
   - type: ExplodeOnTrigger
   - type: Explosive
@@ -85,7 +85,7 @@
     color: orange
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 7 #560m
+    lifetime: 6 #900m
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/pdtcasing.rsi
     layers:
@@ -98,6 +98,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ProjectileIFF
     visualType: Circle
     color: White
@@ -107,13 +108,12 @@
       types:
         Structural: 45
         Piercing: 85
-  - type: ProjectilePhasePrevent
   - type: PointLight
     radius: 3.5
     color: orange
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 10 #750m
+    lifetime: 9 #1170m
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/pdtcasing.rsi
     layers:
@@ -127,6 +127,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ProjectileIFF
     visualType: Circle
     color: White
@@ -134,15 +135,14 @@
     ignoreWeaponGrid: true
     damage:
       types:
-        Structural: 35
+        Structural: 25
         Piercing: 75
-  - type: ProjectilePhasePrevent
   - type: PointLight
     radius: 3.5
     color: orange
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 13 #975m
+    lifetime: 12 #1560m
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/pdtcasing.rsi
     layers:
@@ -156,15 +156,15 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ProjectileIFF
     visualType: Circle
     color: White
-  - type: ProjectilePhasePrevent
   - type: Projectile
     ignoreWeaponGrid: true
     damage:
       types:
-        Structural: 30
+        Structural: 10
         Piercing: 45
   - type: ExplodeOnTrigger
   - type: Explosive
@@ -178,7 +178,7 @@
     color: orange
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 6 #450m
+    lifetime: 5 #650
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/pdtcasing.rsi
     layers:
@@ -193,6 +193,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ProjectileIFF
     visualType: Square
     color: White
@@ -208,7 +209,7 @@
     color: orange
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 23 #1500m
+    lifetime: 19 #1900
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/pdtcasing.rsi
     layers:
@@ -220,6 +221,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ProjectileIFF
     visualType: Square
     color: White
@@ -228,14 +230,14 @@
     ignoreWeaponGrid: true
     damage:
       types:
-        Structural: 80
+        Structural: 50
         Piercing: 50
   - type: PointLight
     radius: 3.5
     color: orange
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 30 #2000m
+    lifetime: 24 #2400m
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/pdtcasing.rsi
     layers:
@@ -247,6 +249,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ProjectileIFF
     visualType: Square
     color: White
@@ -255,7 +258,7 @@
     ignoreWeaponGrid: true
     damage:
       types:
-        Structural: 50
+        Structural: 25
         Piercing: 30
   - type: ExplodeOnTrigger
   - type: Explosive
@@ -269,7 +272,7 @@
     color: orange
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 13 #845
+    lifetime: 10 #1000m
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/pdtcasing.rsi
     layers:
@@ -306,7 +309,7 @@
     color: orange
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 12 #660
+    lifetime: 8 #1200m
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/mortarcasing.rsi
     layers:
@@ -341,7 +344,7 @@
     color: orange
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 35 #1925m
+    lifetime: 25 #3750m
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/mortarcasing.rsi
     layers:
@@ -356,6 +359,7 @@
   - type: ProjectileIFF
     visualType: Square
     color: White
+  - type: ProjectilePhasePrevent
   - type: ShipWeaponProjectile
   - type: Projectile
     ignoreWeaponGrid: true
@@ -375,7 +379,7 @@
     color: orange
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 22 #1210m
+    lifetime: 15 #2250
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/mortarcasing.rsi
     layers:
@@ -389,6 +393,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ProjectileIFF
     visualType: Diamond
     color: White
@@ -399,7 +404,7 @@
         Structural: 150
         Piercing: 150
   - type: TimedDespawn
-    lifetime: 30 #1350m
+    lifetime: 8 #1600m
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/630_armorpiercing_shell_casing.rsi
     layers:
@@ -423,6 +428,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ProjectileIFF
     visualType: Diamond
     color: White
@@ -433,7 +439,7 @@
         Structural: 200
         Piercing: 100
   - type: TimedDespawn
-    lifetime: 90 #4000m
+    lifetime: 22 #4400m
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/630_armorpiercing_shell_casing.rsi
     layers:
@@ -457,6 +463,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ProjectileIFF
     visualType: Diamond
     color: White
@@ -466,7 +473,7 @@
       types:
         Structural: 250
   - type: TimedDespawn
-    lifetime: 65 #2925m
+    lifetime: 16 #3200m
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/630_armorpiercing_shell_casing.rsi
     layers:
@@ -490,13 +497,14 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: Projectile
     ignoreWeaponGrid: true
     damage:
       types:
         Structural: 1000
   - type: TimedDespawn
-    lifetime: 180 #6300
+    lifetime: 21 #6300
   - type: Sprite
     sprite: _NF/Objects/SpaceArtillery/1000_armorpiercing_rail_casing.rsi
     layers:
@@ -524,6 +532,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ShipWeaponProjectile
   - type: Projectile
     ignoreWeaponGrid: true
@@ -535,7 +544,7 @@
     tags:
       - FlakShell
   - type: TimedDespawn
-    lifetime: 12 #480m
+    lifetime: 10 #1000m
   - type: Sprite
     sprite: _Crescent/Objects/ShuttleWeapons/flak.rsi
     layers:

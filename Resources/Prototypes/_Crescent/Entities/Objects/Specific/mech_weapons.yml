@@ -139,12 +139,12 @@
     wideAnimationRotation: -90
     soundHit:
       path: "/Audio/Weapons/Melee/rapierhit.ogg"
-    attackRate: 0.6
+    attackRate: 1
     damage:
       types:
-        Structural: 80
-        Piercing: 45
-        Blunt: 5
+        Structural: 15
+        Slash: 100
+        Blunt: 40
   - type: Tag
     tags:
     - ScoutMechEquipment
@@ -165,11 +165,11 @@
     wideAnimationRotation: -90
     soundHit:
       path: "/Audio/Weapons/Melee/rapierhit.ogg"
-    attackRate: 0.9
+    attackRate: 1.2
     damage:
       types:
-        Structural: 100
-        Piercing: 45
+        Structural: 25
+        Slash: 160
         Heat: 25
   - type: Tag
     tags:
@@ -191,11 +191,11 @@
     wideAnimationRotation: -90
     soundHit:
       path: "/Audio/Weapons/Melee/rapierhit.ogg"
-    attackRate: 0.9
+    attackRate: 0.4
     damage:
       types:
         Structural: 250
-        Blunt: 60
+        Blunt: 90
   - type: Tag
     tags:
     - ScoutMechEquipment

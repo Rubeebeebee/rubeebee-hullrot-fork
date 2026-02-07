@@ -5,6 +5,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent # still do not remove
   - type: ProjectileIFF
     visualType: Circle
     color: "#ea86f7" #you have no idea how hard it was to see the previous IFF color
@@ -19,16 +20,12 @@
     color: purple
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 11 #660m
+    lifetime: 9 #1260
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/magic.rsi
     layers:
       - state: infernoshot
   - type: ShipWeaponProjectile
-  - type: ProjectilePhasePrevent #do not remove
-    mask:
-    - BulletImpassable
-    - Impassable
 
 - type: entity
   id: BulletPlasmaBall
@@ -36,6 +33,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ProjectileIFF
     visualType: Circle
     color: "#ea86f7"
@@ -58,7 +56,7 @@
     color: orange
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 20 #800m
+    lifetime: 16 #2240m
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/magic.rsi
     layers:
@@ -70,6 +68,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ProjectileIFF
     visualType: Circle
     color: "#ea86f7"
@@ -92,7 +91,7 @@
     color: orange
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 10 #500m
+    lifetime: 9 #720m
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/magic.rsi
     layers:
