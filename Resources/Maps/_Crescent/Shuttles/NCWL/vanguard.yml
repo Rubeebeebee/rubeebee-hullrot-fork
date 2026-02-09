@@ -4,7 +4,7 @@ meta:
   engineVersion: 260.2.0
   forkId: ""
   forkVersion: ""
-  time: 01/18/2026 21:29:23
+  time: 02/09/2026 07:14:19
   entityCount: 221
 maps: []
 grids:
@@ -127,6 +127,7 @@ entities:
             92: -5,-3
             119: -5,-3
             140: -5,-3
+            161: -5,-3
         - node:
             zIndex: 1
             id: LatticeCornerNW
@@ -134,6 +135,7 @@ entities:
             98: 5,-3
             125: 5,-3
             146: 5,-3
+            167: 5,-3
         - node:
             zIndex: 1
             id: LatticeCornerSE
@@ -144,6 +146,8 @@ entities:
             116: -2,5
             134: -4,3
             137: -2,5
+            155: -4,3
+            158: -2,5
         - node:
             zIndex: 1
             id: LatticeCornerSW
@@ -154,6 +158,8 @@ entities:
             110: 4,3
             128: 2,5
             131: 4,3
+            149: 2,5
+            152: 4,3
         - node:
             id: LatticeEdgeE
           decals:
@@ -166,6 +172,9 @@ entities:
             133: -4,3
             136: -2,5
             138: -5,-3
+            154: -4,3
+            157: -2,5
+            159: -5,-3
         - node:
             id: LatticeEdgeN
           decals:
@@ -184,6 +193,11 @@ entities:
             142: 0,-6
             143: 3,-6
             144: 5,-3
+            160: -5,-3
+            162: -3,-6
+            163: 0,-6
+            164: 3,-6
+            165: 5,-3
         - node:
             id: LatticeEdgeS
           decals:
@@ -199,6 +213,10 @@ entities:
             129: 4,3
             132: -4,3
             135: -2,5
+            147: 2,5
+            150: 4,3
+            153: -4,3
+            156: -2,5
         - node:
             id: LatticeEdgeW
           decals:
@@ -211,6 +229,9 @@ entities:
             127: 2,5
             130: 4,3
             145: 5,-3
+            148: 2,5
+            151: 4,3
+            166: 5,-3
         - node:
             color: '#FFFFFFFF'
             id: TechCornerE
@@ -410,8 +431,8 @@ entities:
       id: Vanguard
     - type: VesselIcon
       iffIcon:
-       sprite: _Crescent/ShipIcons/ifficons.rsi
-       state: fighter
+        sprite: _Crescent/ShipIcons/ifficons.rsi
+        state: fighter
     - type: SelfDeleteGrid
 - proto: AAAHardpointFixed
   entities:
@@ -421,6 +442,9 @@ entities:
       rot: 3.141592653589793 rad
       pos: -2.5,2.5
       parent: 1
+    - type: DeviceLinkSink
+      links:
+      - 116
     - type: Physics
       canCollide: False
   - uid: 3
@@ -429,6 +453,9 @@ entities:
       rot: 3.141592653589793 rad
       pos: 3.5,2.5
       parent: 1
+    - type: DeviceLinkSink
+      links:
+      - 116
     - type: Physics
       canCollide: False
 - proto: AirlockCommand
@@ -594,11 +621,17 @@ entities:
     - type: Transform
       pos: 3.5,3.5
       parent: 1
+    - type: DeviceLinkSink
+      links:
+      - 154
   - uid: 33
     components:
     - type: Transform
       pos: -2.5,3.5
       parent: 1
+    - type: DeviceLinkSink
+      links:
+      - 153
 - proto: BoriaticGeneratorHerculesShuttle
   entities:
   - uid: 34
@@ -1037,14 +1070,21 @@ entities:
     - type: Transform
       pos: 0.5,4.5
       parent: 1
+    - type: NamedModules
+      buttonNames:
+      - Toggle 50mm 'Whistler' Autocannons
+      - Module B
+      - Module C
+      - Module D
+      - Module E
     - type: DeviceLinkSource
       linkedPorts:
         3:
         - - Group1
-          - SpaceArtilleryFire
+          - Toggle
         2:
         - - Group1
-          - SpaceArtilleryFire
+          - Toggle
     - type: ContainerContainer
       containers:
         board: !type:Container
