@@ -21,7 +21,6 @@
     - Cartridge
   - type: Item
     size: Tiny
-  - type: SpaceGarbage
   - type: EmitSoundOnLand
     sound:
       collection: HeavyBulletBounce
