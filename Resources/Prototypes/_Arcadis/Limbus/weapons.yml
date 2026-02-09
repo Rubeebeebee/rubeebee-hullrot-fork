@@ -80,3 +80,51 @@
     proto: PelletShotgunIncendiarySpread
   - type: SpentAmmoVisuals
     state: "incendiary"
+
+- type: entity
+  name: arayashiki
+  parent: BaseSword
+  id: Arayashiki
+  description: A relic from a time long past. Every slice slowly severs away the hit, [color=#FF0000]but severs away one of your memories as well.[/color]
+  components:
+  - type: Tag
+    tags:
+    - Katana
+  - type: Sprite
+    sprite: _Arcadis/Limbus/arayashiki.rsi
+    state: icon
+  - type: MeleeWeapon
+    angle: 90
+    heavyStaminaCost: 0
+    wideAnimationRotation: -135
+    attackRate: 0.25
+    soundHit:
+      path: /Audio/SimpleStation14/Weapons/Melee/rapierhit.ogg
+    damage:
+      types:
+        Slash: 1
+    maxTargets: 3
+    heavyRateModifier: 1
+    hidden: true
+    disableClick: true
+  - type: EmbeddableProjectile
+  - type: EmbedPassiveDamage
+  - type: ThrowingAngle
+    angle: 225
+  - type: Item
+    size: Normal
+    sprite: _Arcadis/Limbus/arayashiki.rsi #DeltaV
+  - type: DisarmMalus
+  - type: Arayashiki
+
+- type: entity
+  name: die
+  parent: Arayashiki
+  id: ArayashikiCanon
+  description: die
+  components:
+  - type: Arayashiki
+    eraseCharacter: true
+    erasurePerHit: 1
+    eraseTextChance: 1
+
