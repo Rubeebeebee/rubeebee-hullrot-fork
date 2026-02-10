@@ -1,10 +1,10 @@
 - type: guideEntry
   id: UnionfallDSM
-  name: Unionfall - DSM Guide
+  name: (NOT IN USE) Unionfall - DSM Guide
   text: "/ServerInfo/Guidebook/Unionfall/UnionfallDSM.xml"
 
 - type: guideEntry
   id: UnionfallNCWL
-  name: Unionfall - NCWL Guide
+  name: (NOT IN USE) Unionfall - NCWL Guide
   text: "/ServerInfo/Guidebook/Unionfall/UnionfallNCWL.xml"
 
