@@ -5,7 +5,7 @@
 
 - type: guideEntry
   id: HullrotRuleset
-  name: guide-entry-hullrot-rules
+  name: HULLROT Rules
   text: "/ServerInfo/_Crescent/ServerRules/HullrotRuleset.xml"
 
 - type: guideEntry
