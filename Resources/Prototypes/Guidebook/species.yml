@@ -9,6 +9,7 @@
     - Oni
     - Reptilian
     - IPCs
+    - Voidborn
 
 - type: guideEntry
   id: Arachnid
@@ -39,3 +40,8 @@
   id: IPCs
   name: species-name-ipc
   text: "/ServerInfo/Guidebook/Mobs/IPCs.xml"
+
+- type: guideEntry
+  id: Voidborn
+  name: species-name-voidborn
+  text: "/ServerInfo/Guidebook/Mobs/Voidborn.xml"
