@@ -106,7 +106,7 @@
       params:
         variation: 0.125
     recipes:
-      #- 320mmCasing
+      - 320mmCasing
 
 - type: entity
   id: FactoryPlasteelFamilies
