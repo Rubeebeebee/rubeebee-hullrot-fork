@@ -133,6 +133,7 @@ public sealed partial class ArayashikiSystem : EntitySystem
         if (TryComp<InputMoverComponent>(target, out var inputMover))
         {
             inputMover.CanMove = false;
+            Dirty(target, inputMover);
         }
     }
 
