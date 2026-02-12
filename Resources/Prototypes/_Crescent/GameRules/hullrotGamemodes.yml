@@ -474,10 +474,10 @@
         posY: -1000
         IFFColor: IndianRed
         IFFFaction: TFSC
-      #Graveyard:
-        #gameMapID: Graveyard
-        #posX: 4200
-        #posY: 5700
+      Graveyard:
+        gameMapID: Graveyard
+        posX: -5500
+        posY: 5500
       #StrandedShip:
         #gameMapID: StrandedShip
         #posX: 4275
@@ -542,7 +542,7 @@
         posY: 0
         IFFColor: IndianRed
         IFFFaction: TFSC
-      AncientBattlefield:
-        gameMapID: AncientBattlefield
-        posX: -5500
-        posY: 5500
+      #AncientBattlefield:
+        #gameMapID: AncientBattlefield
+        #posX: -5500
+        #posY: 5500
