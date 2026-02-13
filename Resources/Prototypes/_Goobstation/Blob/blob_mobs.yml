@@ -104,9 +104,6 @@
       drawdepth: Mobs
       sprite: _Goobstation/Blob/Mobs/blob_mobs.rsi
       state: blobpod
-    - type: GuideHelp
-      guides:
-      - Blob
 
 # Blobbernaut
 - type: entity
