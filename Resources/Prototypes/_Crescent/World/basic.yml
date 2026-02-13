@@ -16,7 +16,7 @@
   id: GraveyardWrecks
   priority: 9000
   minX: -35
-  maxX: -50
+  axX: -50
   minY: 35
   maxY: 50
   noiseRanges: {}
@@ -528,7 +528,7 @@
 
 - type: spaceBiome
   id: NewAsteroidsStandardTaypanOne
-  priority: 9000
+  priority: 9001
   minX: 35
   maxX: 50
   minY: 35
