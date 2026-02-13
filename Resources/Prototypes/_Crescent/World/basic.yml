@@ -417,6 +417,7 @@
       prob: 0.03
     - id: ExhumerGag
       prob: 0.01
+
 - type: spaceBiome
   id: Craster
   priority: 9000
@@ -524,3 +525,53 @@
       prob: 0.03
     - id: ExhumerGag
       prob: 0.01
+
+- type: spaceBiome
+  id: NewAsteroidsStandardTaypanOneTwo
+  priority: 9000
+  minX: -12
+  maxX: -3
+  minY: -51
+  maxY: -42
+  noiseRanges: {}
+  chunkComponents:
+  - type: DebrisFeaturePlacerController
+    densityNoiseChannel: Density
+  - type: SimpleDebrisSelector
+    debrisTable:
+    - id: HullrotLowYieldLarger
+      prob: 0.5
+    - id: HullrotLowYieldLarge
+      prob: 0.3
+    - id: HullrotLowYieldLargest
+      prob: 0.1
+    - id: HullrotMediumYieldSmall
+      prob: 0.5
+    - id: HullrotMediumYieldMedium
+      prob: 0.3
+    - id: HullrotHighYieldSmall
+      prob: 0.05
+
+- type: spaceBiome
+  id: AsteroidCentralBelt
+  priority: 9000
+  minX: -12
+  maxX: -3
+  minY: -51
+  maxY: -42
+  noiseRanges: {}
+  chunkComponents:
+  - type: DebrisFeaturePlacerController
+    densityNoiseChannel: Density
+  - type: SimpleDebrisSelector
+    debrisTable:
+    - id: HullrotHighYieldMedium
+      prob: 0.5
+    - id: HullrotHighYieldLarge
+      prob: 0.3
+    - id: HullrotMediumYieldSmall
+      prob: 0.4
+    - id: HullrotMediumYieldMedium
+      prob: 0.2
+    - id: HullrotLowYieldSmall
+      prob: 0.05
