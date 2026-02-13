@@ -15,10 +15,10 @@
 - type: spaceBiome
   id: GraveyardWrecks
   priority: 9000
-  minX: -50
-  maxX: -35
-  minY: 35
-  maxY: 50
+  minX: 28
+  maxX: 37
+  minY: 39
+  maxY: 48
   noiseRanges: {}
   chunkComponents:
   - type: DebrisFeaturePlacerController
@@ -246,10 +246,10 @@
 - type: spaceBiome
   id: HeartlandsWrecks
   priority: 9000
-  minX: 35
-  maxX: 50
-  minY: -50
-  maxY: -35
+  minX: 21
+  maxX: 30
+  minY: -46
+  maxY: -37
   noiseRanges: {}
   chunkComponents:
   - type: DebrisFeaturePlacerController
@@ -421,10 +421,10 @@
 - type: spaceBiome
   id: Craster
   priority: 9000
-  minX: -8 #-87
-  maxX: 8 #-78
-  minY: -8 #7
-  maxY: 8 #16
+  minX: -87
+  maxX: -78
+  minY: 7
+  maxY: 16
   noiseRanges: {}
   chunkComponents:
   - type: DebrisFeaturePlacerController
@@ -527,38 +527,12 @@
       prob: 0.01
 
 - type: spaceBiome
-  id: NewAsteroidsStandardTaypanOne
+  id: NewAsteroidsStandardTaypanOneTwo
   priority: 9000
-  minX: 35
-  maxX: 50
-  minY: 35
-  maxY: 50
-  noiseRanges: {}
-  chunkComponents:
-  - type: DebrisFeaturePlacerController
-    densityNoiseChannel: Density
-  - type: SimpleDebrisSelector
-    debrisTable:
-    - id: HullrotLowYieldLarger
-      prob: 0.5
-    - id: HullrotLowYieldLarge
-      prob: 0.3
-    - id: HullrotLowYieldLargest
-      prob: 0.1
-    - id: HullrotMediumYieldSmall
-      prob: 0.5
-    - id: HullrotMediumYieldMedium
-      prob: 0.3
-    - id: HullrotHighYieldSmall
-      prob: 0.05
-
-- type: spaceBiome
-  id: NewAsteroidsStandardTaypanTwo
-  priority: 9000
-  minX: -50
-  maxX: -35
-  minY: -50
-  maxY: -35
+  minX: -12
+  maxX: -3
+  minY: -51
+  maxY: -42
   noiseRanges: {}
   chunkComponents:
   - type: DebrisFeaturePlacerController
@@ -583,10 +557,10 @@
 - type: spaceBiome
   id: AsteroidCentralBelt
   priority: 9000
-  minX: -15
-  maxX: 15
-  minY: -15
-  maxY: 15
+  minX: -12
+  maxX: -3
+  minY: -51
+  maxY: -42
   noiseRanges: {}
   chunkComponents:
   - type: DebrisFeaturePlacerController
