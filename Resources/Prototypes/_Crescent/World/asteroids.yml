@@ -141,6 +141,17 @@
       floorPlacements: 75
 
 - type: entity
+  id: HullrotMediumYieldLarge
+  parent: HullrotMediumYield
+  name: Asteroid Debris
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: MapGrid
+    - type: BlobFloorPlanBuilder
+      radius: 12
+      floorPlacements: 130
+
+- type: entity
   id: HullrotHighYield
   parent: BaseDebrisNF
   name: Salvage Chromite Asteroid
@@ -207,3 +218,14 @@
     - type: BlobFloorPlanBuilder
       radius: 10
       floorPlacements: 100
+
+- type: entity
+  id: HullrotHighYieldLarger
+  parent: HullrotHighYield
+  name: Asteroid Debris
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: MapGrid
+    - type: BlobFloorPlanBuilder
+      radius: 10
+      floorPlacements: 200
