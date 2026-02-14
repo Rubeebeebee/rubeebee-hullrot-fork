@@ -166,7 +166,7 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
             return false;
         }
 
-        var price = _pricing.AppraiseGrid((EntityUid) shuttleGrid, null);
+        var price = ComputeSellValue((EntityUid) shuttleGrid, null);
         var targetGrid = _station.GetLargestGrid(stationData);
 
         if (targetGrid == null) //how are we even here with no station grid
@@ -264,14 +264,8 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
             _station.DeleteStation(shuttleStationUid);
         }
 
-        var value = _pricing.AppraiseGrid(shuttleUid);
+        bill = ComputeSellValue(shuttleUid);
 
-        if (TryComp<ShipPriceMultiplierComponent>(shuttleUid, out var mult))
-        {
-            value *= mult.priceMultiplier;
-        }
-
-        bill = (int) value;
 
         _mapManager.DeleteGrid(shuttleUid);
         _sawmill.Info($"Sold shuttle {shuttleUid} for {bill}");
@@ -300,24 +294,26 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
     }
 
 
-    private int GetShuttleSellValue(EntityUid shuttleUid, ShipyardConsoleUiKey? uiKey = null)
+    private int ComputeSellValue(EntityUid shuttleUid, ShipyardConsoleUiKey? uiKey = null)
     {
         var value = _pricing.AppraiseGrid(shuttleUid);
 
+        // Apply resale multiplier (devaluation)
         if (TryComp<ShipPriceMultiplierComponent>(shuttleUid, out var mult))
         {
             value *= mult.priceMultiplier;
         }
 
-        // Existing tax logic
+        // Apply black market / syndicate tax
         if (uiKey is ShipyardConsoleUiKey.BlackMarket
             or ShipyardConsoleUiKey.Syndicate)
         {
-            value -= (int)(value * 0.30f);
+            value -= value * 0.30f;
         }
 
-        return (int) value;
+        return (int)value;
     }
+
 
 
     // <summary>
@@ -438,9 +434,10 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
 
         // Apply resale depreciation to purchased ships
         var priceMult = EnsureComp<ShipPriceMultiplierComponent>(shuttle.Owner);
-        priceMult.priceMultiplier = 0.80f;
+        priceMult.priceMultiplier = 0.9f;
 
-        var sellValue = (int)(_pricing.AppraiseGrid(shuttle.Owner) * 0.8f);
+        var sellValue = ComputeSellValue(shuttle.Owner, (ShipyardConsoleUiKey)args.UiKey);
+
 
         RefreshState(
             uid,
@@ -618,7 +615,8 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
 
         int sellValue = 0;
         if (deed?.ShuttleUid != null)
-            sellValue = (int) _pricing.AppraiseGrid((EntityUid) (deed?.ShuttleUid!));
+            sellValue = ComputeSellValue((EntityUid)deed.ShuttleUid, (ShipyardConsoleUiKey)args.UiKey);
+
 
         if (ShipyardConsoleUiKey.BlackMarket == (ShipyardConsoleUiKey) args.UiKey || ShipyardConsoleUiKey.Syndicate == (ShipyardConsoleUiKey) args.UiKey) // Unhardcode this please
         {
@@ -730,7 +728,7 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
             if (!TryComp<BankAccountComponent>(actor, out var bank))
                 continue;
 
-            var sellValue = GetShuttleSellValue(shuttle, uiKey);
+            var sellValue = ComputeSellValue(shuttle, uiKey);
 
             RefreshState(
                 console,
@@ -783,7 +781,7 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
             }
 
             var sellValue = deed?.ShuttleUid != null
-                ? GetShuttleSellValue((EntityUid) deed.ShuttleUid, (ShipyardConsoleUiKey) uiComp.Key)
+                ? ComputeSellValue((EntityUid) deed.ShuttleUid, (ShipyardConsoleUiKey) uiComp.Key)
                 : 0;
 
 
@@ -1001,7 +999,7 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
             });
             _shuttle.AddIFFFlag(shuttle.Owner, IFFFlags.IsPlayerShuttle);
             var comp = EnsureComp<ShipPriceMultiplierComponent>(shuttle.Owner);
-            comp.priceMultiplier = 0.80f;
+            comp.priceMultiplier = 0.50f;
 
             // match our IFF faction with our spawner's
             if (TryComp<IFFComponent>(Transform(uid).GridUid, out var stationIFF))
@@ -1027,9 +1025,8 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
         var channel = component.ShipyardChannel;
 
 
-        int sellValue = 0;
-        if (TryComp<ShuttleDeedComponent>(product, out var deed))
-            sellValue = (int) _pricing.AppraiseGrid((EntityUid) (deed?.ShuttleUid!));
+        int sellValue = ComputeSellValue(shuttle.Owner, (ShipyardConsoleUiKey)ui.Key);
+
 
         EnsureComp<ShipSpeedByMassAdjusterComponent>(shuttle.Owner);
         if (TryComp<DynamicCodeHolderComponent>(shuttle.Owner, out var shuttleCodes))
