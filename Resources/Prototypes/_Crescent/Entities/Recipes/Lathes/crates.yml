@@ -53,6 +53,8 @@
   completetime: 2
   materials:
     RefinedScrapSteel: 12500
+    Gold: 2500
+    Silver: 2500
 
 - type: latheRecipe
   id: TitaniumScrapAlloyCrate
@@ -213,6 +215,8 @@
   completetime: 2
   materials:
     RefinedScrapSteel: 12500
+    Gold: 2500
+    Silver: 2500
 
 - type: latheRecipe
   id: UnionQualitySalvage
@@ -220,10 +224,13 @@
   completetime: 2
   materials:
     RefinedScrapSteel: 12500
-
+    Gold: 2500
+    Silver: 2500
 - type: latheRecipe
   id: ImperialQualitySalvage
   result: TradeGoodImperialQualitySalvage
   completetime: 2
   materials:
     RefinedScrapSteel: 12500
+    Gold: 2500
+    Silver: 2500
