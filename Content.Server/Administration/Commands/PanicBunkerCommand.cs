@@ -1,4 +1,4 @@
-﻿// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
+﻿﻿// SPDX-FileCopyrightText: 2022 Moony <moonheart08@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2023 DrSmugleaf <DrSmugleaf@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2023 Morb <14136326+Morb0@users.noreply.github.com>
 // SPDX-FileCopyrightText: 2024 sleepyyapril <flyingkarii@gmail.com>
@@ -168,18 +168,18 @@ public sealed class PanicBunkerMinAccountAgeCommand : LocalizedCommands
 }
 
 [AdminCommand(AdminFlags.Server)]
-public sealed class PanicBunkerMinOverallHoursCommand : LocalizedCommands
+public sealed class PanicBunkerMinOverallMinutesCommand : LocalizedCommands
 {
     [Dependency] private readonly IConfigurationManager _cfg = default!;
 
-    public override string Command => "panicbunker_min_overall_hours";
+    public override string Command => "panicbunker_min_overall_minutes";
 
     public override void Execute(IConsoleShell shell, string argStr, string[] args)
     {
         if (args.Length == 0)
         {
-            var current = _cfg.GetCVar(CCVars.PanicBunkerMinOverallHours);
-            shell.WriteLine(Loc.GetString("panicbunker-command-min-overall-hours-is", ("hours", current)));
+            var current = _cfg.GetCVar(CCVars.PanicBunkerMinOverallMinutes);
+            shell.WriteLine(Loc.GetString("panicbunker-command-min-overall-minutes-is", ("minutes", current)));
         }
 
         if (args.Length > 1)

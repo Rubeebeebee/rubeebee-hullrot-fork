@@ -22,6 +22,5 @@ public sealed partial class GasPressurePumpComponent : Component
     ///     Max pressure of the target gas (NOT relative to source).
     /// </summary>
     [DataField]
-    [GuidebookData]
     public float MaxTargetPressure = Atmospherics.MaxOutputPressure;
 }
