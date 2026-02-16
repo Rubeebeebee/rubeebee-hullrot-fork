@@ -121,14 +121,11 @@
   components:
   - type: ShipyardListing
     shuttles:
-    - Probe
     - buffalo
     - gazpachov
     - Musinyane
-    - Bison
-    - Nazaar
-    - colossus
     - Chanchu
+    - Nazaar
 
 - type: entity
   id: RamziMothershipComputer

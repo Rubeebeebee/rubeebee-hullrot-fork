@@ -4,6 +4,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ShipWeaponProjectile
   - type: Projectile
     ignoreWeaponGrid: true
@@ -14,7 +15,7 @@
     visualType: Circle
     color: Blue
   - type: EmpOnTrigger
-    range: 10
+    range: 5
     energyConsumption: 2500
     disableDuration: 6
   - type: PointLight
@@ -22,7 +23,7 @@
     color: blue
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 15 #750
+    lifetime: 9 #1080
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/magic.rsi
     layers:
@@ -34,6 +35,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ShipWeaponProjectile
   - type: Projectile
     ignoreWeaponGrid: true
@@ -48,7 +50,7 @@
     color: blue
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 12 #1080M
+    lifetime: 14 #2520
   - type: Sprite
     sprite: _Crescent/Objects/Turrets/Ammunition/Projectiles/lasers.rsi
     layers:
@@ -60,6 +62,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ShipWeaponProjectile
   - type: Projectile
     ignoreWeaponGrid: true
@@ -74,7 +77,7 @@
     color: blue
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 20 #1400m
+    lifetime: 22 #3080m
   - type: Sprite
     sprite: _Crescent/Objects/Turrets/Ammunition/Projectiles/lasers.rsi
     layers:
@@ -86,6 +89,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ShipWeaponProjectile
   - type: Projectile
     ignoreWeaponGrid: true
@@ -106,7 +110,7 @@
     color: blue
     energy: 0.5
   - type: TimedDespawn
-    lifetime: 20 #1000m
+    lifetime: 17 #3400
   - type: Sprite
     sprite: _Crescent/Objects/Turrets/Ammunition/Projectiles/lasers.rsi
     layers:

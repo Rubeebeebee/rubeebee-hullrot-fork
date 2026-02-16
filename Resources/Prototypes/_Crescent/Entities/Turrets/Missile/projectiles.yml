@@ -6,6 +6,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ShipWeaponProjectile
   - type: Projectile
     ignoreWeaponGrid: true
@@ -14,7 +15,7 @@
         Structural: 125
         Blunt: 40
   - type: TimedDespawn
-    lifetime: 20 #800m + Lock on range = 1200m
+    lifetime: 28 #2520
   - type: Sprite
     sprite: _Crescent/Objects/Turrets/Ammunition/Projectiles/shortbow.rsi
     layers:
@@ -36,8 +37,8 @@
   - type: HeatSeeking
     rotationSpeed: 15 # slow rotation so it isnt aimbot, still fairly accurate though
     acceleration: 120
-    topSpeed: 100
-    fieldOfView: 30
+    topSpeed: 90
+    fieldOfView: 15
     defaultSeekingRange: 400
     guidanceAlgorithm: PredictiveGuidance
   - type: Fixtures
@@ -74,6 +75,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ShipWeaponProjectile
   - type: Projectile
     ignoreWeaponGrid: true
@@ -82,7 +84,7 @@
         Structural: 150
         Blunt: 40
   - type: TimedDespawn
-    lifetime: 20 #800m + Lock on range = 1100m
+    lifetime: 28 #2520
   - type: Sprite
     sprite: _Crescent/Objects/Turrets/Ammunition/Projectiles/shortbow.rsi
     layers:
@@ -103,10 +105,10 @@
     color: Red
   - type: HeatSeeking
     rotationSpeed: 10 # slow rotation so it isnt aimbot, still fairly accurate though
-    acceleration: 120
-    topSpeed: 120
-    fieldOfView: 20
-    defaultSeekingRange: 300
+    acceleration: 90
+    topSpeed: 90
+    fieldOfView: 15
+    defaultSeekingRange: 400
     guidanceAlgorithm: PredictiveGuidance
   - type: Fixtures
     fixtures:
@@ -143,6 +145,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ShipWeaponProjectile
   - type: Projectile
     ignoreWeaponGrid: true
@@ -151,7 +154,7 @@
         Structural: 175
         Blunt: 40
   - type: TimedDespawn
-    lifetime: 18 #1080 + Lock on range = 1880m
+    lifetime: 25 #2500
   - type: Sprite
     sprite: _Crescent/Objects/Turrets/Ammunition/Projectiles/azimuth.rsi
     layers:
@@ -173,8 +176,8 @@
   - type: HeatSeeking
     rotationSpeed: 25
     acceleration: 50
-    topSpeed: 150
-    fieldOfView: 60
+    topSpeed: 100
+    fieldOfView: 35
     defaultSeekingRange: 800
     guidanceAlgorithm: PurePursuit
   - type: Fixtures
@@ -210,6 +213,7 @@
   parent: AzimuthRocketProjectile
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: Projectile
     ignoreWeaponGrid: true
     damage:
@@ -217,7 +221,7 @@
         Structural: 250
         Blunt: 40
   - type: TimedDespawn
-    lifetime: 18 #1080m + Lock on range = 1780m
+    lifetime: 25 #2500
   - type: Sprite
     sprite: _Crescent/Objects/Turrets/Ammunition/Projectiles/azimuth.rsi
     layers:
@@ -232,7 +236,7 @@
     rotationSpeed: 35
     acceleration: 100
     topSpeed: 150
-    fieldOfView: 50
+    fieldOfView: 35
     defaultSeekingRange: 700
     guidanceAlgorithm: PurePursuit
 
@@ -243,6 +247,7 @@
   parent: AzimuthRocketProjectile
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: Projectile
     ignoreWeaponGrid: true
     damage:
@@ -250,7 +255,7 @@
         Structural: 200
         Blunt: 40
   - type: TimedDespawn
-    lifetime: 18 #1080m + Lock on range = 2080m
+    lifetime: 25 #2500
   - type: Sprite
     sprite: _Crescent/Objects/Turrets/Ammunition/Projectiles/azimuth.rsi
     layers:
@@ -263,9 +268,9 @@
     maxTileBreak: 4
   - type: HeatSeeking
     rotationSpeed: 35
-    acceleration: 70
-    topSpeed: 175
-    fieldOfView: 75
+    acceleration: 100
+    topSpeed: 100
+    fieldOfView: 25
     defaultSeekingRange: 1000
     guidanceAlgorithm: PurePursuit
 
@@ -276,6 +281,7 @@
   parent: AzimuthRocketProjectile
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: Projectile
     ignoreWeaponGrid: true
     damage:
@@ -283,7 +289,7 @@
         Structural: 200
         Blunt: 40
   - type: TimedDespawn
-    lifetime: 18 #1080m + Lock on range = 1930m
+    lifetime: 25 #2500
   - type: Sprite
     sprite: _Crescent/Objects/Turrets/Ammunition/Projectiles/azimuth.rsi
     layers:
@@ -297,8 +303,8 @@
   - type: HeatSeeking
     rotationSpeed: 30
     acceleration: 60
-    topSpeed: 150
-    fieldOfView: 50
+    topSpeed: 100
+    fieldOfView: 45
     defaultSeekingRange: 850
     guidanceAlgorithm: PurePursuit
 
@@ -311,6 +317,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ShipWeaponProjectile
   - type: Projectile
     ignoreWeaponGrid: true
@@ -319,7 +326,7 @@
         Structural: 225
         Blunt: 60
   - type: TimedDespawn
-    lifetime: 20 #1200m + Lock on range = 2700m
+    lifetime: 50 #5000
   - type: Sprite
     sprite: _Crescent/Objects/Turrets/Ammunition/Projectiles/arbalest.rsi
     layers:
@@ -342,7 +349,7 @@
     rotationSpeed: 35
     acceleration: 45
     topSpeed: 100
-    fieldOfView: 75
+    fieldOfView: 40
     defaultSeekingRange: 1500
     guidanceAlgorithm: PurePursuit
   - type: Fixtures
@@ -370,6 +377,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
       - !type:ExplodeBehavior
+  - type: IgnoresHullrotShields
 
 - type: entity
   id: ArbalestRocketProjectileNCWL
@@ -378,6 +386,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ShipWeaponProjectile
   - type: Projectile
     ignoreWeaponGrid: true
@@ -386,7 +395,7 @@
         Structural: 225
         Blunt: 60
   - type: TimedDespawn
-    lifetime: 20 #1200 + Lock on range = 2700m
+    lifetime: 50 #5000m
   - type: Sprite
     sprite: _Crescent/Objects/Turrets/Ammunition/Projectiles/arbalest.rsi
     layers:
@@ -409,7 +418,7 @@
     rotationSpeed: 35
     acceleration: 45
     topSpeed: 100
-    fieldOfView: 75
+    fieldOfView: 65
     defaultSeekingRange: 1500
     guidanceAlgorithm: PurePursuit
   - type: Fixtures
@@ -437,6 +446,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
       - !type:ExplodeBehavior
+  - type: IgnoresHullrotShields
 
 - type: entity
   id: ArbalestRocketProjectileGSC
@@ -445,6 +455,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ShipWeaponProjectile
   - type: Projectile
     ignoreWeaponGrid: true
@@ -453,7 +464,7 @@
         Structural: 275
         Blunt: 60
   - type: TimedDespawn
-    lifetime: 20 #1200m + Lock on range = 2200m
+    lifetime: 50 #5000
   - type: Sprite
     sprite: _Crescent/Objects/Turrets/Ammunition/Projectiles/arbalest.rsi
     layers:
@@ -475,7 +486,7 @@
   - type: HeatSeeking
     rotationSpeed: 20
     acceleration: 75
-    topSpeed: 125
+    topSpeed: 100
     fieldOfView: 40
     defaultSeekingRange: 1000
     guidanceAlgorithm: PurePursuit
@@ -504,6 +515,7 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
       - !type:ExplodeBehavior
+  - type: IgnoresHullrotShields
 
 #gargoyle
 
@@ -514,6 +526,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ShipWeaponProjectile
   - type: Projectile
     ignoreWeaponGrid: true
@@ -522,7 +535,7 @@
         Structural: 275
         Blunt: 60
   - type: TimedDespawn
-    lifetime: 50 #1500m + Lock on range = 3000m
+    lifetime: 70 #5600m
   - type: Sprite
     sprite: _Crescent/Objects/Turrets/Ammunition/Projectiles/gargoyle.rsi
     layers:
@@ -545,7 +558,7 @@
     rotationSpeed: 10
     acceleration: 25
     topSpeed: 80
-    fieldOfView: 75
+    fieldOfView: 65
     defaultSeekingRange: 1500
     guidanceAlgorithm: PurePursuit
   - type: Fixtures
@@ -582,6 +595,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ShipWeaponProjectile
   - type: Projectile
     ignoreWeaponGrid: true
@@ -590,7 +604,7 @@
         Structural: 275
         Blunt: 60
   - type: TimedDespawn
-    lifetime: 50 #1500m + Lock on range = 4500m
+    lifetime: 70 #5600m
   - type: Sprite
     sprite: _Crescent/Objects/Turrets/Ammunition/Projectiles/gargoyle.rsi
     layers:
@@ -613,7 +627,7 @@
     rotationSpeed: 12
     acceleration: 35
     topSpeed: 85
-    fieldOfView: 75
+    fieldOfView: 70
     defaultSeekingRange: 3000
     guidanceAlgorithm: PredictiveGuidance
   - type: Fixtures
@@ -652,6 +666,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ShipWeaponProjectile
   - type: Projectile
     ignoreWeaponGrid: true
@@ -660,7 +675,7 @@
         Structural: 275
         Blunt: 60
   - type: TimedDespawn
-    lifetime: 100 #3000m + Lock on = 8000m  (This might need adjustment)
+    lifetime: 100 #9000m
   - type: Sprite
     sprite: _Crescent/Objects/Turrets/Ammunition/Projectiles/catapult.rsi
     layers:
@@ -683,7 +698,7 @@
     rotationSpeed: 8
     acceleration: 10
     topSpeed: 90
-    fieldOfView: 50
+    fieldOfView: 40
     defaultSeekingRange: 5000
     guidanceAlgorithm: PredictiveGuidance
   - type: Fixtures
@@ -723,6 +738,7 @@
   parent: BaseBulletTrigger
   categories: [ HideSpawnMenu ]
   components:
+  - type: ProjectilePhasePrevent
   - type: ShipWeaponProjectile
   - type: Projectile
     ignoreWeaponGrid: true
@@ -731,7 +747,7 @@
         Structural: 125
         Blunt: 40
   - type: TimedDespawn
-    lifetime: 25 #625m + Lock on = 1025m
+    lifetime: 25 #1250m + Lock on = 1650m
   - type: Sprite
     sprite: _Crescent/Objects/Turrets/Ammunition/Projectiles/shortbow.rsi
     layers:
