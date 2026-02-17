@@ -1,4 +1,4 @@
 - type: guideEntry
   id: MedicalPatches
   name: guide-entry-medpatches
-  text: "/ServerInfo/_Goobstation/Guidebook/Medical/Medicalpatches.xml"
+  text: "/ServerInfo/Guidebook/Service/FoodRecipes.xml" #TODO replace with a non bandage solution.
