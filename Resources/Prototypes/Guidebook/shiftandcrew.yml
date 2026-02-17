@@ -38,7 +38,7 @@
   - Food Recipes
 
 - type: guideEntry
-  id: Food Recipes
+  id: FoodRecipes
   name: guide-entry-foodrecipes
   text: "/ServerInfo/Guidebook/Service/FoodRecipes.xml"
   filterEnabled: true

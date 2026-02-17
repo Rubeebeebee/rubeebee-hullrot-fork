@@ -81,7 +81,7 @@
       TradeDeedUnique: SpaceCash6000
       TradeDeedExotic: SpaceCash10000
       TradeDeed2.5k: SpaceCash2500
-      TradeDeed4.5k: SpaceCash4500
+      TradeDeed4500: SpaceCash4500
       TradeDeed6k: SpaceCash6000
       TradeDeed10k: SpaceCash10000
       TradeDeed15k: SpaceCash15000
@@ -128,15 +128,15 @@
       TradeGoodSilks: TradeDeed10k
       TradeGoodOrgans: TradeDeed10k
       TradeGoodDrugs: TradeDeed10k
-      TradeGoodFabrics: TradeDeed4.5k
-      TradeGoodMiltech: TradeDeed4.5k
-      TradeGoodAlcohol: TradeDeed4.5k
-      TradeGoodRice: TradeDeed4.5k
-      TradeGoodSugar: TradeDeed4.5k
-      TradeGoodFlour: TradeDeed4.5k
-      TradeGoodOldParts: TradeDeed4.5k
-      TradeGoodOldCyber: TradeDeed4.5k
-      TradeGoodNanoTrasen: TradeDeed4.5k
+      TradeGoodFabrics: TradeDeed4500
+      TradeGoodMiltech: TradeDeed4500
+      TradeGoodAlcohol: TradeDeed4500
+      TradeGoodRice: TradeDeed4500
+      TradeGoodSugar: TradeDeed4500
+      TradeGoodFlour: TradeDeed4500
+      TradeGoodOldParts: TradeDeed4500
+      TradeGoodOldCyber: TradeDeed4500
+      TradeGoodNanoTrasen: TradeDeed4500
   - type: Sprite
     sprite: _Crescent/Structures/cargochute.rsi
     layers:
@@ -173,15 +173,15 @@
       TradeGoodSilks: TradeDeed10k
       TradeGoodOrgans: TradeDeed10k
       TradeGoodDrugs: TradeDeed10k
-      TradeGoodFabrics: TradeDeed4.5k
-      TradeGoodMiltech: TradeDeed4.5k
-      TradeGoodAlcohol: TradeDeed4.5k
-      TradeGoodRice: TradeDeed4.5k
-      TradeGoodSugar: TradeDeed4.5k
-      TradeGoodFlour: TradeDeed4.5k
-      TradeGoodOldParts: TradeDeed4.5k
-      TradeGoodOldCyber: TradeDeed4.5k
-      TradeGoodNanoTrasen: TradeDeed4.5k
+      TradeGoodFabrics: TradeDeed4500
+      TradeGoodMiltech: TradeDeed4500
+      TradeGoodAlcohol: TradeDeed4500
+      TradeGoodRice: TradeDeed4500
+      TradeGoodSugar: TradeDeed4500
+      TradeGoodFlour: TradeDeed4500
+      TradeGoodOldParts: TradeDeed4500
+      TradeGoodOldCyber: TradeDeed4500
+      TradeGoodNanoTrasen: TradeDeed4500
   - type: Sprite
     sprite: _Crescent/Structures/cargochute.rsi
     layers:
@@ -216,15 +216,15 @@
       TradeGoodUnionQualitySalvage: TradeDeed10k
       TradeGoodImperialQualitySalvage: TradeDeed10k
       TradeGoodSilks: TradeDeed10k
-      TradeGoodFabrics: TradeDeed4.5k
-      TradeGoodMiltech: TradeDeed4.5k
-      TradeGoodAlcohol: TradeDeed4.5k
-      TradeGoodRice: TradeDeed4.5k
-      TradeGoodSugar: TradeDeed4.5k
-      TradeGoodFlour: TradeDeed4.5k
-      TradeGoodOldParts: TradeDeed4.5k
-      TradeGoodOldCyber: TradeDeed4.5k
-      TradeGoodNanoTrasen: TradeDeed4.5k
+      TradeGoodFabrics: TradeDeed4500
+      TradeGoodMiltech: TradeDeed4500
+      TradeGoodAlcohol: TradeDeed4500
+      TradeGoodRice: TradeDeed4500
+      TradeGoodSugar: TradeDeed4500
+      TradeGoodFlour: TradeDeed4500
+      TradeGoodOldParts: TradeDeed4500
+      TradeGoodOldCyber: TradeDeed4500
+      TradeGoodNanoTrasen: TradeDeed4500
   - type: Sprite
     sprite: _Crescent/Structures/cargochute.rsi
     layers:
@@ -260,15 +260,15 @@
       TradeGoodImperialQualitySalvage: TradeDeed10k
       TradeGoodOrgans: TradeDeed15k
       TradeGoodDrugs: TradeDeed15k
-      TradeGoodFabrics: TradeDeed4.5k
-      TradeGoodMiltech: TradeDeed4.5k
-      TradeGoodAlcohol: TradeDeed4.5k
-      TradeGoodRice: TradeDeed4.5k
-      TradeGoodSugar: TradeDeed4.5k
-      TradeGoodFlour: TradeDeed4.5k
-      TradeGoodOldParts: TradeDeed4.5k
-      TradeGoodOldCyber: TradeDeed4.5k
-      TradeGoodNanoTrasen: TradeDeed4.5k
+      TradeGoodFabrics: TradeDeed4500
+      TradeGoodMiltech: TradeDeed4500
+      TradeGoodAlcohol: TradeDeed4500
+      TradeGoodRice: TradeDeed4500
+      TradeGoodSugar: TradeDeed4500
+      TradeGoodFlour: TradeDeed4500
+      TradeGoodOldParts: TradeDeed4500
+      TradeGoodOldCyber: TradeDeed4500
+      TradeGoodNanoTrasen: TradeDeed4500
   - type: Sprite
     sprite: _Crescent/Structures/cargochute.rsi
     layers:
