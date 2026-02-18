@@ -56,6 +56,7 @@
   components:
   - type: Item
     storedRotation: -90
+    size: Normal
   - type: Tag
     tags:
     - Pickaxe
@@ -63,23 +64,24 @@
     sprite: Objects/Tools/handdrill.rsi
     state: handdrill
   - type: MeleeWeapon
+    heavyRateModifier: 1
     autoAttack: true
     angle: 0
     wideAnimationRotation: -90
     soundHit:
       path: "/Audio/Items/drill_hit.ogg"
-    attackRate: 0.3
+    attackRate: 0.1 #BRRRR IT'S A DRILL IT GO FAST
     range: 1.5
     heavyStaminaCost: 0
     damage:
       types:
-        Structural: 15
+        Structural: 5 #lowers the damage but is fast as fuck boiii
         Piercing: 10 #hullrot change, slightly buffs the drill.
   - type: DamageOtherOnHit
     staminaCost: 0 #no more stamina on an automatic drill
     damage:
       types:
-        Structural: 25
+        Structural: 10
         Piercing: 6
   - type: ThrowingAngle
     angle: 270
