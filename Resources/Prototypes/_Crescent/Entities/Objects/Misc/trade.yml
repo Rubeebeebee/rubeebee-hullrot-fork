@@ -930,7 +930,7 @@
 
 - type: entity
   parent: BaseItem
-  id: TradeDeed2.5k
+  id: TradeDeed2500
   name: deed of delivery
   description: A printed deed of delivery. Blocky letting informs that this deed is worth ten thousand Union credits to an official chartered station.
   components:
@@ -941,7 +941,7 @@
 
 - type: entity
   parent: BaseItem
-  id: TradeDeed4.5k
+  id: TradeDeed4500
   name: deed of delivery
   description: A printed deed of delivery. Blocky letting informs that this deed is worth ten thousand Union credits to an official chartered station.
   components:
