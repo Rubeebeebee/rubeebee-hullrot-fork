@@ -196,6 +196,8 @@ namespace Content.Server.GameTicking
         {
             var ev = RaisePreLoad(proto, options, offset, rot);
 
+            Logger.Info(ev.GameMap.MapPath.ToString());
+
             if (ev.GameMap.IsGrid)
             {
                 var mapUid = _map.CreateMap(out mapId);
@@ -297,8 +299,6 @@ namespace Content.Server.GameTicking
             // TODO MAP LOADING use a new event?
             // This is quite different from the other methods, which will actually create a **new** map.
             var ev = RaisePreLoad(proto, opts, offset, rot);
-
-            Logger.Info(ev.GameMap.MapPath.ToString());
 
             if (ev.GameMap.IsGrid)
             {
