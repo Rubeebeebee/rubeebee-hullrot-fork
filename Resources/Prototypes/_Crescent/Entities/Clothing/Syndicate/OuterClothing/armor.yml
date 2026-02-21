@@ -232,9 +232,6 @@
     sprite: _Crescent/Clothing/Syndicate/OuterClothing/syndicatesellsword.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSyndicateSellsword
-  - type: Construction
-    graph: Sellsword
-    node: armor
 
 - type: entity
   parent: ClothingOuterHardsuitSyndicateBG
