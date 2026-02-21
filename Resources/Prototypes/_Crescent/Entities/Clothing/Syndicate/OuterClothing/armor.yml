@@ -144,9 +144,6 @@
     value: 15
   - type: ClothingAddFaction
     faction: TFSC
-  - type: Construction
-    graph: Sellsword
-    node: start
   - type: Tag
     tags:
     - Bulwark
@@ -251,9 +248,6 @@
     sprite: _Crescent/Clothing/Syndicate/OuterClothing/syndicatefreiritter.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSyndicateFreiritter
-  - type: Construction
-    graph: Freiritter
-    node: armor
 
 #regular shit. if you put hardsuit below here i'm going to explode your cock
 
