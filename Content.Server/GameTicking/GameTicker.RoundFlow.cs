@@ -215,7 +215,7 @@ namespace Content.Server.GameTicking
                 return g;
             }
 
-            if (!_loader.TryLoadMap(ev.GameMap.MapPath,
+            if (!_loader.TryLoadMap(ev.GameMap.MapPath, //this causes an engine related crash yippee!
                     out var map,
                     out var grids,
                     ev.Options,
@@ -407,6 +407,7 @@ namespace Content.Server.GameTicking
             DebugTools.AssertEqual(readyPlayers.Count, ReadyPlayerCount());
 
             // Just in case it hasn't been loaded previously we'll try loading it.
+            // This is the func that crashes with Empty.yml
             LoadMaps();
 
             // map has been selected so update the lobby info text
