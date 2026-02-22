@@ -535,9 +535,9 @@
 
 - type: entity
   parent: BaseItem
-  id: ShipVoucherClementine
-  name: NCWL 'Clementine' pattern LPC fabprint disk
-  description: An LPC fabprint disk loaded with a communard Clementine-class ancient Flagship pattern. Has to be redeemed at a shipyard console.
+  id: ShipVoucherChelubey
+  name: NCWL 'Chelubey' pattern LPC fabprint disk
+  description: An LPC fabprint disk loaded with a communard Chelubey-class ancient Flagship pattern. Has to be redeemed at a shipyard console.
   components:
   - type: Item
     size: Small
@@ -548,7 +548,7 @@
   - type: StaticPrice
     price: 93750
   - type: ShipVoucher
-    ship: Clementine
+    ship: Chelubey
 
 #ANTIQUES END
 
